@@ -1,14 +1,8 @@
 """
-ECG Image Processing Application (Simplified Interface)
-
-This application provides a complete pipeline for processing ECG images:
-1. Remove grid lines from ECG images
-2. Remove text and frame elements
-3. Segment the image into individual ECG leads
-4. Extract and visualize the ECG signal
+ECG Image Processing Application
 
 Usage:
-    python simplified_main.py <input_image> <output_directory>
+    python main.py <input_image> <output_directory>
 """
 
 import sys
@@ -18,7 +12,7 @@ from ecg_processor import ECGProcessor
 def main():
     """Entry point for ECG processing application."""
     if len(sys.argv) < 3:
-        print("Usage: python simplified_main.py <input_image> <output_directory>")
+        print("Usage: python main.py <input_image> <output_directory>")
         sys.exit(1)
 
     input_image_path = sys.argv[1]
